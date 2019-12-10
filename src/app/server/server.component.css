@@ -1,0 +1,15 @@
+.server-div {
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.server-h1 {
+  color: darkred;
+  border: 2px solid tomato;
+  padding: 5px 10px;
+}
+
+.server-p {
+  font-style: italic;
+}

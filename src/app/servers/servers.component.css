@@ -1,0 +1,18 @@
+.servers-div {
+  background-color: transparent;
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.servers-h1 {
+  color: darkred;
+}
+
+.btn-text {
+  color: black;
+}
+
+.servers-p {
+  color: darkturquoise;
+}

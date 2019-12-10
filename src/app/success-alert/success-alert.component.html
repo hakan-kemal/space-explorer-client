@@ -1,0 +1,18 @@
+<div class="success-div">
+  <h1 class="success-h1">{{ success }}!</h1>
+  <label>Username:</label>
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Enter username"
+    [(ngModel)]="username"
+  />
+  <p>{{ username }}</p>
+  <button
+    class="btn btn-success"
+    [disabled]="username === ''"
+    (click)="username = ''"
+  >
+    Reset user
+  </button>
+</div>
