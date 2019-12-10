@@ -1,6 +1,9 @@
 <div class="server-div">
   <h1 class="server-h1">{{ title }} Component!</h1>
-  <p [ngStyle]="{ color: getColor() }">
+  <p
+    [ngStyle]="{ color: getColor() }"
+    [ngClass]="{ 'server-p': serverStatus === 'online' }"
+  >
     {{ "Server" }} with ID {{ serverId }} is {{ getServerStatus() }}
   </p>
 </div>
