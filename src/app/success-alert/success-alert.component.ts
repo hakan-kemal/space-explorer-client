@@ -7,4 +7,7 @@ import { Component } from "@angular/core";
 })
 export class SuccessAlertComponent {
   success = "Success Alert";
+  allowNewUser = false;
+  userCreationStatus = "No user was created!";
+  username = "";
 }
