@@ -11,8 +11,9 @@ import { WarningAlertComponent } from "./warning-alert/warning-alert.component";
 import { SuccessAlertComponent } from "./success-alert/success-alert.component";
 import { SpaceComponent } from "./space/space.component";
 import { AppRoutingModule } from "./app-routing.module";
-import { HomeComponent } from './home/home.component';
-import { PlanetComponent } from './planet/planet.component';
+import { HomeComponent } from "./home/home.component";
+// import { PlanetComponent } from "./planet/planet.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -22,10 +23,16 @@ import { PlanetComponent } from './planet/planet.component';
     WarningAlertComponent,
     SuccessAlertComponent,
     SpaceComponent,
-    HomeComponent,
-    PlanetComponent
+    HomeComponent
+    // PlanetComponent
   ],
-  imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
