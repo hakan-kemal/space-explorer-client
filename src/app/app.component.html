@@ -1,14 +1,24 @@
-<div class="app-div">
-  <h1 class="app-h1">My {{ title }} App!</h1>
-  <img
-    width="100"
-    alt="Angular Logo"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-  />
-  <hr />
+<div class="app-container">
+  <div class="app-div">
+    <router-outlet></router-outlet>
+    <!-- <a routerLink="/home">Home</a>
+    <a routerLink="/space">Space</a>
+    <a routerLink="/planet">Planet</a> -->
+    <h1 class="app-h1">Your {{ title }} starts here!</h1>
+    <!-- <img
+      class="app-img"
+      width="100"
+      alt="Angular Logo"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+    /> -->
+    <button type="button" class="btn btn-danger btn-edit app-btn">
+      Space
+    </button>
+  </div>
 </div>
-<div>
-  <!-- <button class="btn btn-primary" (click)="showSecret = !showSecret">
+
+<!--  <div>
+    <button class="btn btn-primary" (click)="showSecret = !showSecret">
     Display Details
   </button> 
   <button class="btn btn-primary" (click)="onToggleDetails()">
@@ -22,8 +32,8 @@
   >
     {{ logItem }}
   </div> -->
+<!-- 
   <app-servers></app-servers>
-  <!-- 
   <app-success-alert></app-success-alert>
-  <app-warning-alert></app-warning-alert> -->
-</div>
+  <app-warning-alert></app-warning-alert>
+</div> -->
