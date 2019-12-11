@@ -1,12 +1,45 @@
+.app-container {
+  height: 100vh;
+  margin: 0 auto;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
 .app-div {
   text-align: center;
 }
 
 .app-h1 {
   color: darkred;
+  /* padding-right: 10px;
+  padding-bottom: 10px; */
 }
 
 .app-p {
   color: turquoise;
-  font-weight: 700;
+}
+
+.app-btn {
+  text-align: center;
+  font-family: "Space Mono", monospace;
+}
+
+.btn-edit {
+  color: black;
+  width: 100px;
+  padding: 4px;
+  font-size: large;
+  border: 1px solid turquoise;
+  border-radius: 10px 0 10px 0;
+}
+
+.btn-edit:hover {
+  background-color: #152757;
+  border-color: white;
+  color: white;
 }
