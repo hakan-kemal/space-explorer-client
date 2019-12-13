@@ -13,6 +13,7 @@ import { HomeComponent } from "./home/home.component";
 import { SpaceComponent } from "./space/space.component";
 // import { PlanetComponent } from "./planet/planet.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { GraphQLModule } from './graphql.module';
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
@@ -36,7 +37,8 @@ const routes: Routes = [
     FormsModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    GraphQLModule
   ],
   // exports: [RouterModule],
   providers: [],
