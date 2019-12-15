@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <div class="container" *ngFor="let launch of launches | async">
+    <ul>
+      <li>Launch: {{ launch.id }}</li>
+      <li>Site: {{ launch.site }}</li>
+      <li>Rocket: {{ launch.rocket.name }}</li>
+      <li>Mission: {{ launch.mission.name }}</li>
+    </ul>
+  </div>
+</div>

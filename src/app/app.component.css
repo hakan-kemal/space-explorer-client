@@ -1,13 +1,16 @@
 .app-container {
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   vertical-align: middle;
-  height: 100%;
   width: 100%;
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   align-items: center;
   justify-content: center;
+  background-image: url("https://wallpaperscute.com/wp-content/uploads/2019/09/HD-Space-Backgrounds.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 .app-div {
@@ -31,7 +34,7 @@
 
 .btn-edit {
   color: black;
-  width: 100px;
+  width: 200px;
   padding: 4px;
   font-size: large;
   border: 1px solid turquoise;
