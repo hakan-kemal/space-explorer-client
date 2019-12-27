@@ -13,6 +13,14 @@ import { Launch, Query } from "../planet.model";
 @Component({
   selector: "app-planet-list",
   templateUrl: "./planet-list.component.html",
+  // styles: [`
+  // :host {
+  //   display: block;
+  //   padding: 32px;
+  //   border: 1px solid black;
+  //   border-radius: 8px;
+  // }
+  // `]
   styleUrls: ["./planet-list.component.css"]
 })
 export class PlanetListComponent implements OnInit {
@@ -47,6 +55,7 @@ export class PlanetListComponent implements OnInit {
               }
               mission {
                 name
+                missionPatch
               }
             }
           }

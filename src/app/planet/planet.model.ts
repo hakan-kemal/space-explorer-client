@@ -10,22 +10,18 @@
 //   }
 // }
 
-// export type Course = {
-//   id: number;
-//   title: string;
-//   author: string;
-//   description: string;
-//   topic: string;
-//   url: string;
-// };
-
-// export type Query = {
-//   allCourses: Course[];
-// };
-
 export type Launch = {
   id: number;
   site: string;
+  rocket: {
+    id: number;
+    name: string;
+    type: string;
+  };
+  mission: {
+    name: string;
+    missionPatch: string;
+  };
 };
 
 export type Query = {

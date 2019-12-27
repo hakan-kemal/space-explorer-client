@@ -12,15 +12,16 @@ import {
   IgxCardModule,
   IgxRippleModule
 } from "igniteui-angular";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from "./app.component";
 import { NavigationComponent } from "./navigation/navigation.component";
 import { SpaceComponent } from "./space/space.component";
+import { HomeComponent } from "./home/home.component";
 import { PlanetComponent } from "./planet/planet.component";
 import { PlanetListComponent } from "./planet/planet-list/planet-list.component";
 import { PlanetItemComponent } from "./planet/planet-list/planet-item/planet-item.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-// import { GraphQLModule } from "./graphql.module";
 
 const routes: Routes = [
   { path: "space", component: SpaceComponent },
@@ -33,6 +34,7 @@ const routes: Routes = [
     NavigationComponent,
     SpaceComponent,
     PlanetComponent,
+    HomeComponent,
     PlanetListComponent,
     PlanetItemComponent
   ],
@@ -44,6 +46,7 @@ const routes: Routes = [
     ApolloModule,
     HttpLinkModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     IgxButtonModule,
     IgxIconModule,
     IgxCardModule,
