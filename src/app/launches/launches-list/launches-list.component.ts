@@ -1,32 +1,22 @@
 import { Component, OnInit } from "@angular/core";
-// import { Planet } from "../planet.model";
 import { Apollo } from "apollo-angular";
 import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
 
-// import image from "../../../../images/galaxy.png";
-
 import gql from "graphql-tag";
 
-import { Launch, Query } from "../planet.model";
+import { Launch, Query } from "../launches.model";
 
 @Component({
-  selector: "app-planet-list",
-  templateUrl: "./planet-list.component.html",
-  // styles: [`
-  // :host {
-  //   display: block;
-  //   padding: 32px;
-  //   border: 1px solid black;
-  //   border-radius: 8px;
-  // }
-  // `]
-  styleUrls: ["./planet-list.component.css"]
+  selector: "app-launches-list",
+  templateUrl: "./launches-list.component.html",
+  styleUrls: ["./launches-list.component.css"]
 })
-export class PlanetListComponent implements OnInit {
+export class LaunchesListComponent implements OnInit {
   // imagePath = image;
 
   launches: Observable<Launch[]>;
+
   // planets: Planet[] = [
   //   new Planet(
   //     "Earth",
@@ -49,13 +39,16 @@ export class PlanetListComponent implements OnInit {
           query launches {
             launches {
               id
+              upcoming
+              date
               site
-              rocket {
-                name
-              }
               mission {
                 name
-                missionPatch
+                details
+                patch
+              }
+              rocket {
+                name
               }
             }
           }

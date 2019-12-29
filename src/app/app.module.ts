@@ -15,28 +15,26 @@ import {
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from "./app.component";
-import { NavigationComponent } from "./navigation/navigation.component";
-import { SpaceComponent } from "./space/space.component";
+// import { NavigationComponent } from "./navigation/navigation.component";
 import { HomeComponent } from "./home/home.component";
-import { PlanetComponent } from "./planet/planet.component";
-import { PlanetListComponent } from "./planet/planet-list/planet-list.component";
-import { PlanetItemComponent } from "./planet/planet-list/planet-item/planet-item.component";
+import { LaunchesComponent } from "./launches/launches.component";
+import { LaunchesListComponent } from "./launches/launches-list/launches-list.component";
+import { LaunchDetailsComponent } from "./launches/launch-details/launch-details.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 const routes: Routes = [
-  { path: "space", component: SpaceComponent },
-  { path: "planet", component: PlanetComponent }
+  { path: "launches", component: LaunchesComponent },
+  { path: "launches/:id", component: LaunchDetailsComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
-    SpaceComponent,
-    PlanetComponent,
+    // NavigationComponent,
     HomeComponent,
-    PlanetListComponent,
-    PlanetItemComponent
+    LaunchesComponent,
+    LaunchesListComponent,
+    LaunchDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,11 @@
 <div *ngIf="router.url === '/'" class="app-container">
   <h1 class="app-h1">SpaceX {{ title }}</h1>
 
-  <a routerLink="/planet" role="button" class="btn btn-danger btn-edit app-btn">
+  <a
+    routerLink="/launches"
+    role="button"
+    class="btn btn-danger btn-edit app-btn"
+  >
     Explore
   </a>
 </div>

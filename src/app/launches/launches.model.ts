@@ -12,15 +12,18 @@
 
 export type Launch = {
   id: number;
+  upcoming: boolean;
+  date: number;
   site: string;
+  mission: {
+    name: string;
+    details: string;
+    patch: string;
+  };
   rocket: {
     id: number;
     name: string;
     type: string;
-  };
-  mission: {
-    name: string;
-    missionPatch: string;
   };
 };
 
