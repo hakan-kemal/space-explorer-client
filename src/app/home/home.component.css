@@ -1,0 +1,44 @@
+.app-container {
+  height: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://wallpaperscute.com/wp-content/uploads/2019/09/HD-Space-Backgrounds.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.app-h1 {
+  color: darkred;
+}
+
+.app-p {
+  color: turquoise;
+}
+
+.app-btn {
+  margin: 10px;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+}
+
+.btn-edit {
+  color: black;
+  width: 200px;
+  padding: 4px;
+  font-size: large;
+  border: 1px solid turquoise;
+  border-radius: 10px 0 10px 0;
+}
+
+.btn-edit:hover {
+  background-color: #152757;
+  border-color: white;
+  color: white;
+}
