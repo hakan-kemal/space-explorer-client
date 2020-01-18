@@ -4,7 +4,7 @@ Website listing SpaceX launches; Angular+Apollo used on the front-end & Apollo+G
 
 ## Impression
 
-![space-explorer](space-explorer.gif)
+![space-explorer](./images/space-explorer.gif)
 
 ## Development server
 
